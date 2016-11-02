@@ -28,13 +28,13 @@ Demo: <a href='https://www2.cs.ccu.edu.tw/~ltc98u/MessageBox/'>Here</a>
 
 <h2>Step 3.</h2>
 <p>New a MessageBox object, and input options.</p>
-<p>
+<h6>
 * target: (selector) Which div you want to show <br />
 * duration: (int) How many seconds will the box show <br />
 * wrapper: (selector) Box will show in the side of the wrapper <br />
 * side: (string) Which side <br />
 * margin: (int) How far between the box and wrapper <br />
-</p>
+</h6>
 -------------------------------------------------------
 
     var myMessageBox = new MessageBox({
