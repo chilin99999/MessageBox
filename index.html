@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MessageBox Demo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="MessageBox.js"></script>
+    <link href="style.css" rel="stylesheet" />
+    <script>
+        $("document").ready(function() {
+            var myMessageBox = new MessageBox({
+                target: "#myBox",
+                duration: 2,
+                wrapper: ".wrapper",
+                side: "right",
+                margin: 0,
+            });
+            $("#showBox").on("click", function() {
+                myMessageBox.show();
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <input type="button" value="Click me" id="showBox" />
+    </div>
+    <div id="myBox">My message is here.</div>
+</body>
+</html>
